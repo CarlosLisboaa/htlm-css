@@ -11,11 +11,16 @@
     table {
       width: 400px;
       border-collapse: collapse;
+      position: relative;
     }
     caption {
       font-size: 1.5em;
       background-color: lightgray;
       padding: 10px;
+    }
+
+    tbody > tr:nth-child(2n) { 
+      background-color: lightgrey;
     }
 
     td, th {
@@ -24,7 +29,16 @@
     }
     thead,tfoot {
       background-color: grey;
+
+
     }
+
+    thead > tr >th {
+      position: sticky;
+      top: -1px;
+      background-color: grey;
+    }
+
     .num {
       text-align: right;
     }
