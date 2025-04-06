@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo</h1>
+    <form action="cadastro" method="post" autocomplete="on">
+       
+        <p>
+            <label for="est">Estado</label>
+            <select name="estado" id="estado">
+                <optgroup label="Região  Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP" selected>Sao paulo</option>
+                </optgroup>
+
+                
+                    <optgroup label="Regiao Nordeste">
+                        <option value="HA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="pro">Profissão</label>
+            <input type="text" name="pro" id="pro" list="prof">
+            <datalist id="prof">
+                <option value="adm">Adm</option>
+                <option value="cont">COntabilista</option>
+                <option value="dev">Desenvolvedor</option>
+                <option value="PROg">Programador</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="msg">Mensagem</label><br>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </p>
+
+      <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p> 
+    </form>
+</body>
+</html>
